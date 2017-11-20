@@ -13,16 +13,7 @@ public class Compiler extends CompilerBase {
 	}
 	
 	void compile(ASTNode ast) {
-		Environment env = new Environment();
-		GlobalVariable vx = addGlovalVariable(env, "x");
-		GlobalVariable vy = addGlobalVariable(env, "y");
-		GlobalVariable vz = addGlobalVariable(env, "z");
-		
-		System.out.println("\t.section .data");
-		System.out.println("\t@ 大域変数の定義");
-		emitLabel(vx.getLabel());
-		System.out.println("")
-		
+	    Environment env = new Environment()
 		throw new Error("not implemented");
 	}
 
